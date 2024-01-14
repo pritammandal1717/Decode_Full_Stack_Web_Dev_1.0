@@ -1,0 +1,16 @@
+Q4. Describe the usage of the comma operator in JavaScript and provide an example.
+
+Answer:
+    In JavaScript, the comma operator (,) allows you to create a compound expression where 
+    we have multiple expressions being evaluated. The comma is used to separate each expression.
+
+        Example:
+                In JavaScript, we can write - 
+
+                    show = (console.log(1), console.log(2), console.log(3), 4);
+
+                Output:
+                    1
+                    2
+                    3
+
