@@ -1,0 +1,124 @@
+1. What is a database? Explain with an example on why should we need a database.
+
+    Database is a storage system that can store data into it securly and in an efficient way.That data can be accessed, modified and deleted from the database in future.
+
+    Example:-
+        To develop any bank software there is a requirement to store the customer bank details, trasactions details and more information. For this there is needed a database to store the data into an efficient way and manipulated them according to requirement.
+
+
+2. Write a short note on file based storage system. Explain the major challenges of a file based storage system?
+
+    File based storage system is nohting but to store data in a heirarchical structure of directory or folder.
+
+    Challenges:
+        
+        1. Redundancy is the  major challange of file based storage system.
+        2. To manage relationship is more challanging in it.
+        3. It is less secure.
+        4. Large set of data is a big problem to handle.
+        5. Multiple user cannot access or modify one data in it. 
+
+3. What is DBMS? What was the need for DBMS?
+
+    DBMS stands for Database Management System. DBMS manages how the data will be stored in the database more efficiently and how the data will be accessed more securly from the database.
+
+    Need of DBMS:-
+
+        1. Redundancy of data can be avoid using DBMS because when one tries to push a duplicate data into the database then DBMS cannot allow to do that.
+
+        2. All the data are stored by DBMS in such a way that data can be accessed and modified efficiently.
+
+        3. DBMS provide data independance. It means that the data which is stored in the database are abstruct from the user who uses the application. Only those data will be provided which is needed.
+
+        4. DBMS gives more security to the data in the database. It can secure the data by authorization of the user.
+
+
+4. Explain 5 challenges of file-based storage system which was tackled by DBMS?
+
+    1. Redundancy : In file based storage system redundancy of data is the major challange. In DBMS redundancy of data can be eliminated.
+
+    2. Integrity : File based storage system does not provide any constraints when the data is put in the database, but DBMS applies constraints when the data is inserting into the database.
+
+    3. Security : In file based storage system, data can be secure by password. It is less secure than DBMS security. DBMS provides the authentication and authorization features.
+
+    4. Data Retrive : For large data set data retrive is more complex in file based storage system rather than DBMS.
+
+    5. Concurrency : Concurrent access of data creates anomalies. These anomalies cannot be handled by file based storage system. DBMS provides locking protocol to handle the anomalies easily.
+
+
+5. List Out the different types of classification in DBMS and explain?
+
+    1. Based on Data Model: 
+
+        i. SQL Database : Data are stored in the form of table.
+                Example : MySQL, Oracle etc.
+
+        ii. NoSQL Database : Data are not stored in the form of table, it can be stored in key-value pair, document-oriented, graph based. 
+                Example : Redis, MongoDB, Neo4j etc.
+
+    2. Based on Structure :
+        
+        i. Structured Database :  Data are stored in a structured way like table.
+                Example : MySQL, Oracle etc.
+        
+        ii. Unstructured Database : Data cannot store ina structured way. This type of database gives the flexibility to data.
+
+    3. Based on Content :
+
+        i. Document-Oriented Database : Data is stored as document as JSON or XML format.
+
+        ii. Graph Database : Store the data according to their degree of relationship. It gives priority to the relationship between the data.
+    
+    4. Based on Development : 
+
+        i. On-Premises Database : These type of databases are located in the same machine or connected to the machine where the application is runing.
+
+        ii. Cloud Database : In these type of database, data can be accessed any where over the network. 
+
+
+6. What is the significance of Data Modelling and explain the types of Data Modelling?
+
+    Data Modelling :
+        Data modeling is the process of creating a diagram that represents a data system and defines the structure, relationships of the data. Data modeling simplifies the data in such a way that makes it easy to understand and manage it.
+    
+    Significance :
+        Understand the relationships between different data elements and how they’re connected.
+
+        Create a logical and efficient database structure. A well-designed data model can improve query performance and reduce data redundancy.
+
+        Maintain a system is more easily. A well-designed model can make it easier to add new features or data sources in the future.
+    
+    Types of Data Modelling :
+
+        Conceptual Data Model : 
+            A conceptual data model is a simple, high-level representation of the data. It focuses on attributes, entities, and relationships in a database management system.
+
+        Logical Data Model :
+            A logical data model is a more complex representation of the data structures and relationships within a system. It defines the entities, attributes, and relationships that make up the data, but does not specify the physical storage or implementation details.
+        
+        Physical Data Model : 
+            A physical data model is a detailed representation of a database design that includes information about the specific data types, sizes, and constraints of each field, as well as the relationships between tables and other database objects.
+
+7. Explain 3 schema architecture along with its advantages?
+
+    i. Physical Level :
+        This is the lowest level in the three level architecture. It is also known as the internal level. The physical level describes how data is actually stored in the database. In the lowest level, this data is stored in the external hard drives in the form of bits and at a little high level, it can be said that the data is stored in files and folders.
+    
+    ii. Conceptual Level :
+        The conceptual level is at a higher level than the physical level. It is also known as the logical level. It describes how the database appears to the users conceptually and the relationships between various data tables. The conceptual level does not care for how the data in the database is actually stored.
+
+    iii. External Level :
+        This is the highest level in the three level architecture and closest to the user. It is also known as the view level. The external level only shows the relevant database content to the users in the form of views and hides the rest of the data. So different users can see the database as a different view as per their individual requirements.
+
+    Advantage : 
+    
+        i. It improves data integrity. Here, all the updated information goes through the second tier. The second tier can ensure that only important information is allowed to be updated in the database and the risk of unreliable client applications corrupting information is removed.
+
+        ii. Balancing of load is much easier with division of core business from the server of the database.
+
+        iii. High performance, lightweight, persistent object.
+
+        iv. Easy to maintain and modification.
+
+        v. Improve security
+
